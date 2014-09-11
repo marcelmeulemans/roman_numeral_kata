@@ -7,7 +7,7 @@ import com.tkh.kata.RomanNumeralsKata;
 
 public class RomanNumeralsKataTest {
 	@Test
-	public void convertIntToRoman() {
-		assertEquals(RomanNumeralsKata.convert(1), "I");
+	public void convert1ToRoman() {
+		assertEquals("I", RomanNumeralsKata.convert(1));
 	}
 }
