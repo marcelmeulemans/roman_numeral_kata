@@ -21,18 +21,24 @@ public class RomanNumeralsKata {
 				return "III";
 			if (arabic==2) 
 				return "II"; 
-			else
-				return "I";		
+			if (arabic==1)
+				return "I";		 
+
+
 		}
 		else if(arabic < 20)
 		{
 			return "X"+convert(arabic % 10);
 		}
-		else
+		else if(arabic < 30)
 		{
-			return "XX";
+			return "XX"+convert(arabic % 10);
 		}
-
+		else if(arabic < 40)
+		{
+			return "XXX"+convert(arabic % 10);
+		}
+		return "";
 	}
 
 }

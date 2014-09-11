@@ -37,7 +37,15 @@ public class RomanNumeralsKataTest {
 	@Test
 	public void convert21ToRoman() {
 		assertEquals("XXI", RomanNumeralsKata.convert(21));
-	}		
+	}
+	@Test
+	public void convert22ToRoman() {
+		assertEquals("XXII", RomanNumeralsKata.convert(22));
+	}
+	@Test
+	public void convert31ToRoman() {
+		assertEquals("XXXI", RomanNumeralsKata.convert(31));
+	}	
 	@Test
 	public void convert15ToRoman() {
 		assertEquals("XV", RomanNumeralsKata.convert(15));
