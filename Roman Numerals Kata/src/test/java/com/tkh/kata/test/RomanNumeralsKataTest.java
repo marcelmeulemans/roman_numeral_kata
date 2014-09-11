@@ -10,4 +10,8 @@ public class RomanNumeralsKataTest {
 	public void convert1ToRoman() {
 		assertEquals("I", RomanNumeralsKata.convert(1));
 	}
+	@Test
+	public void convert11ToRoman() {
+		assertEquals("XI", RomanNumeralsKata.convert(11));
+	}	
 }
