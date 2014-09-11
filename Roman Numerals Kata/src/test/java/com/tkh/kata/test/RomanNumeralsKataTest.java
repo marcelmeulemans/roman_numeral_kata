@@ -15,6 +15,10 @@ public class RomanNumeralsKataTest {
 		assertEquals("II", RomanNumeralsKata.convert(2));
 	}
 	@Test
+	public void convert5ToRoman() {
+		assertEquals("V", RomanNumeralsKata.convert(5));
+	}
+	@Test
 	public void convert11ToRoman() {
 		assertEquals("XI", RomanNumeralsKata.convert(11));
 	}	
@@ -29,5 +33,9 @@ public class RomanNumeralsKataTest {
 	@Test
 	public void convert3ToRoman() {
 		assertEquals("III", RomanNumeralsKata.convert(3));
-	}	
+	}
+	@Test
+	public void convert4ToRoman() {
+		assertEquals("IV", RomanNumeralsKata.convert(4));
+	}
 }
