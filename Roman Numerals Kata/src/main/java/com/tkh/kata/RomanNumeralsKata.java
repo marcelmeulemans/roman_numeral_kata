@@ -22,7 +22,6 @@ public class RomanNumeralsKata {
 				return "VIII";
 			if (arabic == 9)
 				return "IX";
-
 		}
 
 		else if (arabic < 20)
@@ -41,7 +40,11 @@ public class RomanNumeralsKata {
 			return "LXX" + convert(arabic % 10);
 		else if (arabic < 90)
 			return "LXXX" + convert(arabic % 10);	
-		
+		else if (arabic < 100)
+			return "CX" + convert(arabic % 10);	
+		else
+			if (arabic < 200)
+				return "C" + convert(arabic % 100);
 		
 		return "";
 
