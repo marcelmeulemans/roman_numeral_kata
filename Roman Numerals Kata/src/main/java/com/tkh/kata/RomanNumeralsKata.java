@@ -1,22 +1,20 @@
 package com.tkh.kata;
 
-import java.util.Collections;
-
 public class RomanNumeralsKata {
 
 	public static String convert(int arabic) {
-		
 
 		if (arabic < 10) {
 			if (arabic == 5)
 				return "V";	
+			if (arabic == 4)
+				return "IV";				
 			if (arabic==3) 
 				return "III";
 			if (arabic==2) 
 				return "II"; 
 			else
-				return "I";
-		
+				return "I";		
 		}
 
 
