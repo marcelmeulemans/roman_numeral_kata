@@ -47,6 +47,26 @@ public class RomanNumeralsKataTest {
 		assertEquals("XXXI", RomanNumeralsKata.convert(31));
 	}	
 	@Test
+	public void convert41ToRoman() {
+		assertEquals("XLI", RomanNumeralsKata.convert(41));
+	}	
+	@Test
+	public void convert42ToRoman() {
+		assertEquals("XLII", RomanNumeralsKata.convert(42));
+	}	
+	@Test
+	public void convert52ToRoman() {
+		assertEquals("LII", RomanNumeralsKata.convert(52));
+	}	
+	@Test
+	public void convert62ToRoman() {
+		assertEquals("LXII", RomanNumeralsKata.convert(62));
+	}	
+	@Test
+	public void convert72ToRoman() {
+		assertEquals("LXXII", RomanNumeralsKata.convert(72));
+	}	
+	@Test
 	public void convert15ToRoman() {
 		assertEquals("XV", RomanNumeralsKata.convert(15));
 	}
