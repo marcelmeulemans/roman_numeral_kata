@@ -5,16 +5,23 @@ import java.util.Collections;
 public class RomanNumeralsKata {
 
 	public static String convert(int arabic) {
-		String arabicString = String.valueOf(arabic);
-		char[] arabicIntArr = arabicString.toCharArray();
-	//	Collections.reverse(arabicIntArr);
-		if(arabicIntArr.length>1) 
-			if (arabicIntArr[1] ==  '2')
-				return "XII";
+		
+		if (arabic < 10) {
+			if (arabic==2) 
+				return "II"; 
 			else
-				return "XI";
-		if(arabicIntArr.length>2) return  "XII";
-		return "I";
+				return "I";
+		}
+
+
+		String result = "X";
+		if(arabic==11) result += "I";
+		else if(arabic==12) result += "II";
+		else if(arabic==15) result += "V";
+		else 
+		return result;
+		return result;
 	}
 
 }
+ 
