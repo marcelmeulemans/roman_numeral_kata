@@ -7,21 +7,17 @@ import com.tkh.kata.RomanNumeralsKata;
 
 public class RomanNumeralsKataTest {
 	@Test
-	public void convert1ToRoman() {
+	public void convert1to9ToRoman() {
 		assertEquals("I", RomanNumeralsKata.convert(1));
-	}
-	@Test
-	public void convert2ToRoman() {
 		assertEquals("II", RomanNumeralsKata.convert(2));
-	}
-	@Test
-	public void convert5ToRoman() {
+		assertEquals("III", RomanNumeralsKata.convert(3));
+		assertEquals("IV", RomanNumeralsKata.convert(4));
 		assertEquals("V", RomanNumeralsKata.convert(5));
-	}
-	@Test
-	public void convert6ToRoman() {
 		assertEquals("VI", RomanNumeralsKata.convert(6));
-	}	
+		assertEquals("VII", RomanNumeralsKata.convert(7));
+		assertEquals("VIII", RomanNumeralsKata.convert(8));
+		assertEquals("IX", RomanNumeralsKata.convert(9));
+	}
 	@Test
 	public void convert11ToRoman() {
 		assertEquals("XI", RomanNumeralsKata.convert(11));
@@ -31,15 +27,20 @@ public class RomanNumeralsKataTest {
 		assertEquals("XII", RomanNumeralsKata.convert(12));
 	}	
 	@Test
+	public void convert13ToRoman() {
+		assertEquals("XIII", RomanNumeralsKata.convert(13));
+	}
+	@Test
+	public void convert20ToRoman() {
+		assertEquals("XX", RomanNumeralsKata.convert(20));
+	}	
+	@Test
+	public void convert21ToRoman() {
+		assertEquals("XXI", RomanNumeralsKata.convert(21));
+	}		
+	@Test
 	public void convert15ToRoman() {
 		assertEquals("XV", RomanNumeralsKata.convert(15));
 	}
-	@Test
-	public void convert3ToRoman() {
-		assertEquals("III", RomanNumeralsKata.convert(3));
-	}
-	@Test
-	public void convert4ToRoman() {
-		assertEquals("IV", RomanNumeralsKata.convert(4));
-	}
+
 }
