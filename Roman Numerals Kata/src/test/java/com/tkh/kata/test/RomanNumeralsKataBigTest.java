@@ -2,13 +2,11 @@ package com.tkh.kata.test;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.tkh.kata.RomanNumeralsKata;
 
 public class RomanNumeralsKataBigTest {
-	@Ignore
 	@Test
 	public void testConvert1To3000ToRoman() {
 		assertEquals("I", RomanNumeralsKata.convert(1));
